@@ -29,6 +29,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttons(_ sender: AnyObject) {
+        
+        
+        
+        
 //        sender.titleLabel:UILabel?:<get>.font =  UIFont.boldSystemFont(ofSize: 80)
 
         
@@ -37,7 +41,7 @@ class ViewController: UIViewController {
             if (currentPlayer == 1){
              
                 count = count + 1
-                sender.setTitle("O", for: UIControl.State())
+                sender.setImage(UIImage(named:"circle.png" ), for:  UIControl.State())
             
                 if (count == 10){
                     self.result.text =  "draw"
@@ -51,15 +55,16 @@ class ViewController: UIViewController {
             }
             else {
                 count = count + 1
-
-                sender.setTitle("X", for: UIControl.State())
-                currentPlayer = 1
+                sender.setImage(UIImage(named:"x.png" ), for:  UIControl.State())
+            
            
                     
                 if count == 10{
                 self.result.text =  "draw"
                     UIView.animate(withDuration: 2, animations:{ (self.result.alpha = CGFloat(1))}, completion: (nil))
                     playerTurn = false}
+                currentPlayer = 1
+
            
             }
             }
@@ -145,6 +150,7 @@ class ViewController: UIViewController {
 
             
         
+    @IBOutlet weak var playAgainButton: UIButton!
     @IBAction func sendNullingOfBoard(_ sender: UIButton) {
        
         if playerTurn == false{
@@ -157,7 +163,7 @@ class ViewController: UIViewController {
         
         for i in 1...9 {
             let button = view.viewWithTag(i) as! UIButton
-            button.setTitle(" ", for: UIControl.State())
+            button.setImage(nil, for: UIControl.State())
         }
             playerTurn=true
        

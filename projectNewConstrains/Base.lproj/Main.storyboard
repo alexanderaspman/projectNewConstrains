@@ -11,57 +11,62 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="projectNewConstrains" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xfe-3I-3yG">
-                                <rect key="frame" x="0.0" y="184" width="414" height="428"/>
+                                <rect key="frame" x="0.0" y="184" width="424" height="428"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="jS4-CI-iKd">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="420"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="jS4-CI-iKd">
+                                        <rect key="frame" x="-57" y="0.0" width="536" height="437"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cG2-Hb-CiH">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="428"/>
+                                        <rect key="frame" x="5" y="0.0" width="414" height="428"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TQt-us-TbS">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70n-mJ-28u">
+                                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="wordWrap" role="primary" preferredBehavioralStyle="mac" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="70n-mJ-28u">
                                                         <rect key="frame" x="0.0" y="0.0" width="130" height="140"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="BWR-Fr-hh7"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="130" id="XMM-LF-dN6"/>
                                                             <constraint firstAttribute="height" constant="140" id="ajH-eu-zlT"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U9k-Jz-fhk"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9T-gr-qXx">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9T-gr-qXx">
                                                         <rect key="frame" x="142" y="0.0" width="130" height="140"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="lgl-MH-q7j"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A8w-zG-eKh"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68P-Os-i2O">
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="68P-Os-i2O">
                                                         <rect key="frame" x="284" y="0.0" width="130" height="140"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="n4n-zj-Jhl"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvi-9T-x7i"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZt-MY-3od"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -69,7 +74,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bq5-wQ-Hnv">
                                                 <rect key="frame" x="0.0" y="140" width="414" height="140"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClH-dL-nC0">
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ClH-dL-nC0">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="140"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="49c-4m-JdJ"/>
@@ -77,34 +82,37 @@
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="iZH-vt-ReT"/>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="vkk-Pi-P7b"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="95N-z8-HUK"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCi-Ge-mTC"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-hF-085">
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1VU-hF-085">
                                                         <rect key="frame" x="138" y="0.0" width="138" height="140"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="140" id="l8v-Nq-DYf"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="yEF-ZF-PP6"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AX6-VL-g7F"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TcZ-BH-tsJ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Hj-h5-pmV">
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Hj-h5-pmV">
                                                         <rect key="frame" x="276" y="0.0" width="138" height="140"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="GZK-LQ-39m"/>
                                                             <constraint firstAttribute="height" constant="140" id="OlR-lP-rCv"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wBp-5l-GfT"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sME-u5-1hj"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -112,40 +120,49 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Gw-mx-CbE">
                                                 <rect key="frame" x="0.0" y="280" width="414" height="148"/>
                                                 <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NPI-i4-XDQ">
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPI-i4-XDQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="138" height="148"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="148" id="de7-gt-bSp"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="mAj-IN-wwp"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="urB-sb-fls"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVm-w1-yY7"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZON-06-wVc">
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZON-06-wVc">
                                                         <rect key="frame" x="138" y="0.0" width="138" height="148"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="lN3-NE-hgq"/>
                                                             <constraint firstAttribute="height" constant="148" id="sna-rf-DiQ"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cCh-HL-tGI"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXU-fe-Xcs"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F93-YQ-4Mh" userLabel="Button">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F93-YQ-4Mh" userLabel="Button">
                                                         <rect key="frame" x="276" y="0.0" width="138" height="148"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="KdF-Fb-Oii"/>
                                                             <constraint firstAttribute="height" constant="148" id="mqn-N9-N1d"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle"/>
+                                                        </state>
                                                         <connections>
                                                             <action selector="buttons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9lU-VD-4hM"/>
+                                                            <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OkU-Qb-VsJ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -156,18 +173,14 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <accessibility key="accessibilityConfiguration" hint="parentToBoard"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="jS4-CI-iKd" secondAttribute="bottom" id="Le7-Cb-YNS"/>
-                                    <constraint firstAttribute="trailing" secondItem="jS4-CI-iKd" secondAttribute="trailing" id="Mfr-T3-Dzi"/>
                                     <constraint firstItem="cG2-Hb-CiH" firstAttribute="top" secondItem="Xfe-3I-3yG" secondAttribute="top" id="Mjr-iL-3Ip"/>
-                                    <constraint firstItem="jS4-CI-iKd" firstAttribute="top" secondItem="Xfe-3I-3yG" secondAttribute="top" id="UPa-S0-KsC"/>
-                                    <constraint firstAttribute="trailing" secondItem="cG2-Hb-CiH" secondAttribute="trailing" id="UVK-iS-kAV"/>
-                                    <constraint firstItem="cG2-Hb-CiH" firstAttribute="leading" secondItem="Xfe-3I-3yG" secondAttribute="leading" id="bDd-1m-fTc"/>
-                                    <constraint firstItem="jS4-CI-iKd" firstAttribute="leading" secondItem="Xfe-3I-3yG" secondAttribute="leading" id="gw7-Se-eQW"/>
+                                    <constraint firstAttribute="trailing" secondItem="cG2-Hb-CiH" secondAttribute="trailing" constant="5" id="ZKL-iR-NbU"/>
+                                    <constraint firstItem="cG2-Hb-CiH" firstAttribute="leading" secondItem="Xfe-3I-3yG" secondAttribute="leading" constant="5" id="su5-ro-yCn"/>
                                     <constraint firstAttribute="bottom" secondItem="cG2-Hb-CiH" secondAttribute="bottom" id="x82-h0-oVp"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zat-Lg-iY5">
-                                <rect key="frame" x="40" y="94" width="334" height="36"/>
+                                <rect key="frame" x="40" y="94" width="344" height="36"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <attributedString key="attributedText">
                                     <fragment content="someone  has won">
@@ -189,6 +202,11 @@
                                     <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRj-7y-e34"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JmN-fd-1kq">
+                                <rect key="frame" x="0.0" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -209,9 +227,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="playAgainButton" destination="GWK-11-MS5" id="U4G-V1-wBg"/>
                         <outlet property="result" destination="Zat-Lg-iY5" id="EfX-5f-guF"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
         </scene>
@@ -223,6 +243,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
