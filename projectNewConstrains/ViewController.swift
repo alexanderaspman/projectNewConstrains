@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     let gameOver = [ [0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[1,4,7],[2,5,8],[0,4,8],[2,4,6] ]
     
 
-    
-
-
     @IBOutlet weak var result: UILabel!
     
     
+    
+
+
     @IBAction func buttons(_ sender: AnyObject) {
         
         
@@ -150,7 +150,6 @@ class ViewController: UIViewController {
 
             
         
-    @IBOutlet weak var playAgainButton: UIButton!
     @IBAction func sendNullingOfBoard(_ sender: UIButton) {
        
         if playerTurn == false{

@@ -16,9 +16,6 @@
 		5D75B31428D49BF600B76AE2 /* projectNewConstrainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75B31328D49BF600B76AE2 /* projectNewConstrainsTests.swift */; };
 		5D75B31E28D49BF600B76AE2 /* projectNewConstrainsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75B31D28D49BF600B76AE2 /* projectNewConstrainsUITests.swift */; };
 		5D75B32028D49BF600B76AE2 /* projectNewConstrainsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75B31F28D49BF600B76AE2 /* projectNewConstrainsUITestsLaunchTests.swift */; };
-		5D75B32D28DB8D4000B76AE2 /* createPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75B32C28DB8D4000B76AE2 /* createPlayerController.swift */; };
-		5D75B32F28DB98E800B76AE2 /* NameAndScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75B32E28DB98E800B76AE2 /* NameAndScoreViewController.swift */; };
-		5D75B33128DBA29500B76AE2 /* StoreNameScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D75B33028DBA29500B76AE2 /* StoreNameScoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +49,6 @@
 		5D75B31928D49BF600B76AE2 /* projectNewConstrainsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = projectNewConstrainsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D75B31D28D49BF600B76AE2 /* projectNewConstrainsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectNewConstrainsUITests.swift; sourceTree = "<group>"; };
 		5D75B31F28D49BF600B76AE2 /* projectNewConstrainsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectNewConstrainsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5D75B32C28DB8D4000B76AE2 /* createPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createPlayerController.swift; sourceTree = "<group>"; };
-		5D75B32E28DB98E800B76AE2 /* NameAndScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameAndScoreViewController.swift; sourceTree = "<group>"; };
-		5D75B33028DBA29500B76AE2 /* StoreNameScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreNameScoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +105,6 @@
 				5D75B30528D49BF500B76AE2 /* Assets.xcassets */,
 				5D75B30728D49BF500B76AE2 /* LaunchScreen.storyboard */,
 				5D75B30A28D49BF500B76AE2 /* Info.plist */,
-				5D75B32C28DB8D4000B76AE2 /* createPlayerController.swift */,
-				5D75B32E28DB98E800B76AE2 /* NameAndScoreViewController.swift */,
-				5D75B33028DBA29500B76AE2 /* StoreNameScoreViewController.swift */,
 			);
 			path = projectNewConstrains;
 			sourceTree = "<group>";
@@ -267,9 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D75B32D28DB8D4000B76AE2 /* createPlayerController.swift in Sources */,
-				5D75B32F28DB98E800B76AE2 /* NameAndScoreViewController.swift in Sources */,
-				5D75B33128DBA29500B76AE2 /* StoreNameScoreViewController.swift in Sources */,
 				5D75B30128D49BF200B76AE2 /* ViewController.swift in Sources */,
 				5D75B2FD28D49BF200B76AE2 /* AppDelegate.swift in Sources */,
 				5D75B2FF28D49BF200B76AE2 /* SceneDelegate.swift in Sources */,

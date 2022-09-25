@@ -150,7 +150,7 @@
                                                             <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXU-fe-Xcs"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F93-YQ-4Mh" userLabel="Button">
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F93-YQ-4Mh" userLabel="Button">
                                                         <rect key="frame" x="276" y="0.0" width="138" height="148"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="138" id="KdF-Fb-Oii"/>
@@ -193,22 +193,21 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GWK-11-MS5">
-                                <rect key="frame" x="175" y="707" width="90" height="31"/>
-                                <color key="tintColor" systemColor="systemGreenColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Play again"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzy-75-G9S">
+                                <rect key="frame" x="74" y="725" width="267" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="playAgain">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
                                 <connections>
-                                    <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRj-7y-e34"/>
+                                    <action selector="sendNullingOfBoard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obO-LW-laa"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="68P-Os-i2O" firstAttribute="width" secondItem="GWK-11-MS5" secondAttribute="height" multiplier="130:31" id="A3k-PQ-K0r"/>
-                            <constraint firstItem="ZON-06-wVc" firstAttribute="width" secondItem="GWK-11-MS5" secondAttribute="height" multiplier="138:31" id="NLB-ke-u4d"/>
-                            <constraint firstItem="GWK-11-MS5" firstAttribute="top" secondItem="Xfe-3I-3yG" secondAttribute="bottom" constant="95" id="NoF-ys-AUA"/>
                             <constraint firstItem="Zat-Lg-iY5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Ob7-sf-KeT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xfe-3I-3yG" secondAttribute="trailing" id="aO1-8d-T4a"/>
                             <constraint firstItem="Xfe-3I-3yG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bYe-3X-qO6"/>
@@ -216,13 +215,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xfe-3I-3yG" secondAttribute="bottom" constant="250" id="eeG-SK-DPC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zat-Lg-iY5" secondAttribute="trailing" constant="40" id="fgb-EV-Ywx"/>
                             <constraint firstItem="Xfe-3I-3yG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="140" id="grh-Ti-ZHm"/>
-                            <constraint firstItem="1VU-hF-085" firstAttribute="width" secondItem="GWK-11-MS5" secondAttribute="height" multiplier="138:31" id="p2M-hu-wKg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GWK-11-MS5" secondAttribute="trailing" symbolic="YES" id="tFc-Ok-w67"/>
-                            <constraint firstItem="GWK-11-MS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="tlj-Ax-mNh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="playAgainButton" destination="GWK-11-MS5" id="U4G-V1-wBg"/>
                         <outlet property="result" destination="Zat-Lg-iY5" id="EfX-5f-guF"/>
                     </connections>
                 </viewController>
@@ -233,11 +228,9 @@
     </scenes>
     <resources>
         <image name="Group 1" width="375" height="417"/>
+        <image name="playAgain" width="269" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
