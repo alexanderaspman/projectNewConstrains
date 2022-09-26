@@ -146,13 +146,13 @@ class ViewController: UIViewController {
         
     }
 
-
+var pressed = true
 
             
         
     @IBAction func sendNullingOfBoard(_ sender: UIButton) {
-       
-        if playerTurn == false{
+       pressed = false
+        if pressed == false{
             currentPlayer = 1
             count = 1
             board = [0,0,0,0,0,0,0,0,0]
